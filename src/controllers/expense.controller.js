@@ -9,7 +9,7 @@ import { ApiResponse } from '../utils/ApiResponse.js';
 
 const addExpense = asyncHandler(async (req, res) => {
     const { group, amount, description, paidBy, splitAmong } = req.body;
-    //test
+
     if(!group || !amount || !description || !paidBy || !splitAmong){
         throw new ApiError(400, "Please provide group, amount, description, paidBy and splitAmong");
     }
