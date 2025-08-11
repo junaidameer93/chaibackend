@@ -32,6 +32,7 @@ app.use(cors({
 //sudo lsof -i :8000
 //sudo kill -9 <PID>
 //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
+// github variables: username = junaidameer93 , password = V4bXy.F*=nh/R!_
 
 app.use(express.json({limit :'5mb'}));
 app.use(express.urlencoded({extended:true, limit:'5mb'}));
