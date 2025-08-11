@@ -1,18 +1,19 @@
-# Base image
-FROM node:20
+# Use a lightweight Node.js image
+FROM node:22-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and install dependencies
+# Install dependencies only when needed
 COPY package*.json ./
-RUN npm install
 
-# Copy rest of the app
+RUN npm install --omit=dev
+
+# Copy the rest of the application
 COPY . .
 
 # Expose the port
 EXPOSE 5000
 
-# Run the app
-CMD ["node", "src/index.js"]
+# Start the app
+CMD ["npm", "start"]
