@@ -3,7 +3,6 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import http from "http";
 import { Server } from "socket.io";
-import OpenAI from "openai";
 import dotenv from "dotenv"
 
 dotenv.config({
