@@ -21,7 +21,6 @@ export const io = new Server(server, {
   }
 });
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_KEY });
 
 app.use(cors({
     origin: 'http://localhost:5173',
