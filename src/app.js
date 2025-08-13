@@ -45,8 +45,8 @@ import groupRouter from './routes/group.routes.js';
 import expenseRouter from './routes/expense.routes.js';
 
 app.get("/api/v1/test", (req, res) => {
-  console.log("Hello World from docker 1 ");
-  res.send("Hello World from docker 1");
+  console.log("Hello World from docker 112 ");
+  res.send("Hello World from docker 112");
 });
 
 app.use("/api/v1/users", userRouter);
