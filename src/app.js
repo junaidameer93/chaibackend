@@ -33,6 +33,8 @@ app.use(cors({
 //sudo kill -9 <PID>
 //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
 // github variables: username = junaidameer93 , password = V4bXy.F*=nh/R!_
+//digital ocean root password: junaid@123Ameer
+// Hostname : ubuntu-s-1vcpu-512mb-10gb-sgp1-01
 
 app.use(express.json({limit :'5mb'}));
 app.use(express.urlencoded({extended:true, limit:'5mb'}));
@@ -45,9 +47,9 @@ import groupRouter from './routes/group.routes.js';
 import expenseRouter from './routes/expense.routes.js';
 
 app.get("/api/v1/test", (req, res) => {
-  console.log("Hello World 12345");
-  res.send("Hello World 12345");
-})
+  console.log("Hello World from docker digital ocean");
+  res.send("Hello World from docker digital ocean");
+});
 
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/groups", groupRouter);
