@@ -30,8 +30,13 @@ app.use(cors({
 //sudo lsof -i :8000
 //sudo kill -9 <PID>
 //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
+
 // github variables: username = junaidameer93 , password = V4bXy.F*=nh/R!_
-//digital ocean root password: junaid@123Ameer
+
+//digital ocean 
+// user = ssh root@134.209.100.144
+// password: junaid@123Ameer
+
 // Hostname : ubuntu-s-1vcpu-512mb-10gb-sgp1-01
 
 app.use(express.json({limit :'5mb'}));
@@ -46,7 +51,7 @@ import expenseRouter from './routes/expense.routes.js';
 
 app.get("/api/v1/test", (req, res) => {
   console.log("Hello World from docker 222 ");
-  res.send("Hello World from docker 222");
+  res.send("Hello World from docker 2223");
 });
 
 app.use("/api/v1/users", userRouter);
